@@ -28,8 +28,14 @@
             </div>
         </div>
         <div class="col-lg-2 game_score">
-            <div class="game_score-comp"></div>
-            <div class="game_score-user"></div>
+            <div class="game_score-field">
+                <div class="game_score-header">COMP</div>
+                <div class="game_score-comp"></div>
+            </div>
+            <div class="game_score-field">
+                <div class="game_score-header">User</div>
+                <div class="game_score-user"></div>
+            </div>
         </div>
         <div class="col-lg-4 sidebar_right">
             <div class="counter">
@@ -47,14 +53,31 @@
                 </div>
             </div>
             <div class="buttons">
-                <button class="buttons_getter" onclick="clickedNumber(this.value)" value="1">1</button>
-                <button class="buttons_getter" onclick="clickedNumber(this.value)" value="2">2</button>
-                <button class="buttons_getter" onclick="clickedNumber(this.value)" value="3">3</button>
+                <div class="buttons_game">
+                    <div class="buttons_user-count-header">Game controls</div>
+                    <div class="buttons_game-controls">
+                        <button class="buttons_new" onclick="resetGame()">New Easy Game</button>
+                        <button class="buttons_new" onclick="resetHardGame()">New Hard Game</button>
+                    </div>
+                </div>
+                <div class="buttons_user">
+                    <div class="buttons_user-count-header">
+                        Choose amount of animals
+                    </div>
+                    <div class="buttons_user-count">
+                        <button class="buttons_getter" onclick="clickedNumber(this.value)" value="1">1</button>
+                        <button class="buttons_getter" onclick="clickedNumber(this.value)" value="2">2</button>
+                        <button class="buttons_getter" onclick="clickedNumber(this.value)" value="3">3</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="row footer"></div>
 </div>
+<script src="js/common_functions.js"></script>
+<script src="js/user_functions.js"></script>
+<script src="js/comp_functions.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
