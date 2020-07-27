@@ -1,6 +1,7 @@
 // Reset/start new game
 let qualityOfGame = 0;
 let firstStep = 0;
+let userCountStep = 0;
 
 let resetGame = () => {
     renewGame();
@@ -11,6 +12,6 @@ let resetGame = () => {
 let resetHardGame = () => {
 
     renewGame();
-qualityOfGame = 1
+qualityOfGame = 1;
     addGipo(25);
 }

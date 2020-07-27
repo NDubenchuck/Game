@@ -6,6 +6,7 @@ let userFirstStep = () => {
 }
 
 let clickedNumber = (der) => {
+    userCountStep = der;
     checkGame();
     document.querySelector('.header_text').textContent = '';
     if (qualityOfGame === 0) {
@@ -33,7 +34,7 @@ let clickedNumber = (der) => {
             ser.classList.remove('hipo');
             document.querySelector('.game_score-user').appendChild(ser);
         }
-        compHint(der);
+        compHint( undefined, der);
 
         document.querySelector('.counter_user-number').textContent = document.querySelectorAll('.hipo_user').length;
         document.querySelector('.counter_common-number').textContent = document.querySelectorAll('.hipo').length;
