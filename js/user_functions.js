@@ -19,7 +19,7 @@ let clickedNumber = (der) => {
                 ser.classList.remove('hipo');
                 document.querySelector('.game_score-user').appendChild(ser);
             }
-            compHint();
+            compHint(der);
 
             document.querySelector('.counter_user-number').textContent = document.querySelectorAll('.hipo_user').length;
             document.querySelector('.counter_common-number').textContent = document.querySelectorAll('.hipo').length;
