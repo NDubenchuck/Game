@@ -1,6 +1,10 @@
 
 // User Hint
 
+let userFirstStep = () => {
+    firstStep = 2;
+}
+
 let clickedNumber = (der) => {
     checkGame();
     document.querySelector('.header_text').textContent = '';

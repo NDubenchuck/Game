@@ -1,3 +1,27 @@
+let ransomStep = () => {
+    firstStep = 3;
+}
+
+
+
+let closeInstruction = () => {
+    document.querySelector('.modal').setAttribute('style', 'display: none !important')
+}
+
+
+let randomCheck = () => {if (firstStep === 1) {
+    compHint();
+} else if (firstStep === 2) {
+    document.querySelector('.header_text').textContent = 'Plese, make a hint!!!!';
+} else if (firstStep === 3) {
+    randomHint();
+    resetGame();
+}}
+
+let randomHint = () => {
+    return firstStep = randomInteger(1, 2);
+}
+
 let addGipo = (amount) => {
     let mainPage = document.querySelector('.game_field');
     if(amount) {

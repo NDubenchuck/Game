@@ -10,6 +10,16 @@
     <title>Game</title>
 </head>
 <body>
+<div class="modal">
+    <div class="modal_instruction">
+        Dear Gamer!
+        First of all please choose a step and than game level.
+        After all this actions you will be able to Play!
+    </div>
+    <div>
+        <button class='modal_close' onclick="closeInstruction()">Close</button>
+    </div>
+</div>
 <div class="container">
     <div class="row header">
         <div class="header_text"></div>
@@ -54,7 +64,13 @@
             </div>
             <div class="buttons">
                 <div class="buttons_game">
-                    <div class="buttons_user-count-header">Game controls</div>
+                    <div class="buttons_user-count-header">Choose step</div>
+                    <div class="buttons_game-controls">
+                        <button class="buttons_new" onclick="compFirst()">Comp First Step</button>
+                        <button class="buttons_new" onclick="userFirstStep()">User First Step</button>
+                        <button class="buttons_new" onclick="ransomStep()">Random First Step</button>
+                    </div>
+                    <div class="buttons_user-count-header">Game level</div>
                     <div class="buttons_game-controls">
                         <button class="buttons_new" onclick="resetGame()">New Easy Game</button>
                         <button class="buttons_new" onclick="resetHardGame()">New Hard Game</button>
