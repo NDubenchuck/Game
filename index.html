@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Game</title>
+</head>
+<body>
+<div class="container">
+    <div class="row header">
+        <div class="header_text"></div>
+    </div>
+    <div class="row game">
+        <div class="col-lg-6 game_field">
+            <div class="game_field-amount">
+            </div>
+            <div class="game_field-gamers">
+                <div class="game_field-gamers--comp">
+
+                </div>
+                <div class="game_field-gamers--user">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 game_score">
+            <div class="game_score-comp"></div>
+            <div class="game_score-user"></div>
+        </div>
+        <div class="col-lg-4 sidebar_right">
+            <div class="counter">
+                <div class="counter_comp">
+                    <div class = 'counter_header'>Comp</div>
+                    <div class="counter_comp-number"></div>
+                </div>
+                <div class="counter_common">
+                    <div class = 'counter_header'>Amount</div>
+                    <div class="counter_common-number"></div>
+                </div>
+                <div class="counter_user">
+                    <div class = 'counter_header'>User</div>
+                    <div class="counter_user-number"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="buttons_getter" onclick="clickedNumber(this.value)" value="1">1</button>
+                <button class="buttons_getter" onclick="clickedNumber(this.value)" value="2">2</button>
+                <button class="buttons_getter" onclick="clickedNumber(this.value)" value="3">3</button>
+            </div>
+        </div>
+    </div>
+    <div class="row footer"></div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>

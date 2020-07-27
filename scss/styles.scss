@@ -1,0 +1,86 @@
+@import "variables";
+
+body {
+    background: #0B2F3F;
+}
+.header {
+    height: 10vh;
+    background: #0B2F3F;
+
+    &_text {
+        font-size: 20px;
+        padding-left: 20px;
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+.game {
+    height: 70vh;
+    background: #ceb2b2;
+    border-radius: 15px;
+
+    &_field {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: inherit;
+        padding: 20px;
+    }
+}
+.footer {
+    height: 20vh;
+    background: #0B2F3F;
+}
+.hipo {
+    position: relative;
+    width: 10%;
+    height: 10%;
+
+    img {
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+}
+.sidebar_right {
+    border: 4px solid whitesmoke;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    position: relative;
+
+    &_getter {
+        width: 33%;
+        font-size: 25px;
+        cursor: pointer;
+        color: $getterColor;
+        text-align: center;
+        transition: 300ms all ease-in-out;
+
+        &:hover {
+            color: rgba($getterColor, 0.99);
+        }
+    }
+}
+.counter {
+    display: flex;
+
+    &_comp, &_user, &_common {
+        width: 33%;
+        text-align: center;
+
+        &-number {
+            font-size: 25px;
+            color: #504d7c;
+        }
+    }
+    &_header {
+        font-size: 25px;
+        color: #504d7c;
+    }
+}
